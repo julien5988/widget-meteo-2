@@ -3,8 +3,11 @@ body {
     
 }
 main{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
     background-color: beige;
-    max-height: 400px;
+    min-height: 150px;
     min-width: 200px ;
     border-radius: 10px;
     padding: 2px;
@@ -19,6 +22,31 @@ p{
 h1 {
     text-align: center;
 }
-#country{
-    font-size: 18px;
+button {
+    height: 35px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    height: 35px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+input{
+    height: 30px;
+}
+.icon-meteo{
+   display: flex;
+   align-items: center;
+}
+
+span{
+    font-weight: 700;
 }

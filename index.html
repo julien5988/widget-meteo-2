@@ -15,20 +15,30 @@
 
 <body>
     <main>
-        <h1>Météo à : <span id="city"></span> , <span id="country"></span></h1>
-        <p>Couverture nuageuse : <span id="cloudCover"></span></p>
-        <p>Point de rosée : <span id="dewPoint"></span></p>
-        <p>Température : <span id="temperature"></span></p>
-        <p>Humidité : <span id="humidity"></span></p>
-        <p>Température ressenti: <span id="temperatureApparent"></span></p>
-        <p>Direction du vent : <span id="windDirection"></span></p>
-        <img id="weatherIcon" src="" alt="Weather Icon">
-        <p id="iconPath"></p>
-
-
+        <h1>Météo à : <span id="city"></span> <span id="country"></span></h1>
+        <div>
+            <p>Couverture nuageuse : <span id="cloudCover"></span></p>
+            <p>Point de rosée : <span id="dewPoint"></span></p>
+            <p>Température : <span id="temperature" class="temperature-text"></span></p>
+        </div>
+        <div>
+            
+            <p>Humidité : <span id="humidity"></span></p>
+            <p>Température ressenti: <span id="temperatureApparent"></span></p>
+            <p> Direction du vent : <span id="windDirection"></span></p>
+        </div>
+        
+        <div class="icon-meteo">
+            <img id="weatherIcon" src="" alt="Weather Icon">
+            <p id="iconPath"></p>
+        </div>
+        <form id="locationForm" action="">
+            <input type="text" id="locationInput" placeholder="Saisir une ville" value="">
+            <button id="searchButton" type="submit">rechercher</button>
+        </form>
     </main>
-     <script src="script.js"></script>
-     <script src="Icon.js" ></script>
+    <script src="script.js"></script>
+    <script src="Icon.js"></script>
 </body>
 
 </html>
